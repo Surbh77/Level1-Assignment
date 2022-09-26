@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary-dary: #1F2937;
+    --primary-green:#6EE7B7;
+}
+
+html, body{
+    position: fixed;
+    bottom: 0;
+    top: 0%;
+    left: 0;
+    right: 0;
+}
+body{
+    background-color: var(--primary-dary);
+    color: var(--primary-green);
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    padding: 2rem;
+    text-align: center;
+    margin:0%;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding: 1rem;
+}
+
+/* .lucky-number{
+
+} */
+
+input{
+    /* margin-bottom: 1rem; */
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#check-number{
+    display: block;
+    margin:auto;
+    background: transparent;
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+    border-width: medium;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+#output-box{
+    text-align: center;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+    padding: 0.3rem;
+}
+
+footer ul li{
+    display: inline;
+    padding: 1rem;
+}
+footer div{
+    font-size:x-small;
+}
+footer ul li a{
+    color: var(--primary-green);
+    text-decoration: none;
+}
