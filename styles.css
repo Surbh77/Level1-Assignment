@@ -13,11 +13,12 @@ body{
 }
 
 hr{
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
 }
 /* Spaces */
 .margin-md{
     margin:2rem;
+    border-radius: 30px;
 }
 /* Container */
 .container{

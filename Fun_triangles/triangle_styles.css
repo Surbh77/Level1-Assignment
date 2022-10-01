@@ -73,7 +73,8 @@ label[for="angle1"]{
     min-height: 100px;
     color: black;
 }
-.quiz-form{
+.q9{
+    display:grid;
 }
 
 .question-container{

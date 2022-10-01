@@ -5,14 +5,18 @@ const output=document.querySelector('#output');
 
 function calculateSumOfSquares(a,b){
     const sumOfSquares=a*a+b*b;
-    return sumOfSquares;
+        return sumOfSquares;
+    
 }
 
 function calculateHypoyenus(){
-    const sumOfSquare= calculateSumOfSquares(Number(sides[0].value),Number(sides[1].value));
-    const lengthOfHypotenuse=Math.sqrt(sumOfSquare)
-    output.innerText='The length of the hypotenuse is:- '+lengthOfHypotenuse;
-    // console.log(lengthOfHypotenuse);
+    if(Number(sides[0].value)<=0 || Number(sides[1].value)<=0){
+        output.innerText='Enter all values greater than zero';
+    }else{
+        const sumOfSquare= calculateSumOfSquares(Number(sides[0].value),Number(sides[1].value));
+        const lengthOfHypotenuse=Math.sqrt(sumOfSquare)
+        output.innerText='The length of the hypotenuse is:- '+lengthOfHypotenuse;
+    }
 }
 
 hypotenusBtn.addEventListener('click',calculateHypoyenus)

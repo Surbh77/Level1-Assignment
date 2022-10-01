@@ -2,7 +2,8 @@
 :root{
     --primary-color: #7c3aed;
     --dary-grey: #64748b;
-    --off-white: #f3f4f6;
+    --off-white: #cddaf5;
+    --secondary-color:#ecf577;
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     color: var(--off-white);
     font-family:'Montserrat', sans-serif;
     color: black;
+    background-color: var(--secondary-color);
 }
 main{
     display: block;
@@ -53,5 +55,6 @@ footer{
 
 footer a{
     padding: 10px;
+    margin:0%;
 }
 

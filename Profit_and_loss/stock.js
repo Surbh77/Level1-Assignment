@@ -13,7 +13,9 @@ function submitHandler(){
 }    
 
 function calculateProfitAndLoss(initial,quantity,current){
-    if(initial>current){
+    if(initial<=0 || quantity<=0 || current<=0){
+        showOutput(`Please enter values greater than zero`)
+    }else if(initial>current){
         var loss=(initial-current)*quantity;
         var losspercentage=(loss / (initial * quantity))*100;
         showOutput(`Hey, the loss is ${loss} and the percentage is ${losspercentage}%`)
